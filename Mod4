@@ -1,0 +1,11 @@
+BP <- c(103,87,32,42,59,109,78,205,135,176)
+
+FinalDecision <- C(0,1,0,1,0,1,0,1,1,1)
+
+par(mfrow=c(1,2))
+
+boxplot(BP, main= "Boxplot of Blood Pressure", xlab = "BP", ylab="")
+
+hist(BP, main= "Histogram of Blood Pressure", xlab = "BP", ylab= "Frequency")
+
+mean (FinalDecision)
