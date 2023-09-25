@@ -1,0 +1,35 @@
+# Rhomework
+# Define matrix A and B
+
+A <- matrix(1:100, nrow=10)
+
+B <- matrix(1:1000, nrow=10)
+
+# Calculate the inverse of matrixA
+
+inverseA <- solve(A)
+
+inverseB <- solve(B)
+
+# Calculate the determinant of matrix A
+
+detA <- det(A)
+
+# Calculate the determinant of matrix B
+
+detB <- det(B)
+
+# Print the results
+
+cat("Inverse of Matrix A")
+print(inverseA)
+
+cat("Inverse of Matrix B")
+print(inverseB)
+
+cat("Determinant of Matrix A")
+print(detA)
+
+cat("Determinant of Matrix B")
+print(detB)
+
