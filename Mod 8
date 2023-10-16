@@ -1,0 +1,49 @@
+library(Pryr)
+
+library(data.table)
+
+student<-read.table(file.choose(),header = TRUE,sep = ",")
+
+#import and read docs
+
+View(rstudent)
+
+# table
+
+> studentmean<-ddply(rstudent,"Sex",transform,Grade.Average=mean(Grade))
+
+ # mean grades
+
+studentmean
+
+# saves studentmean as a .csv
+
+write.csv(studentmean,file = "studentavg.csv")
+
+# create a list of names with letter i, doesn’t filter for case sensitivityj
+
+overall<-subset(rstudent,grepl("i",rstudent$Name, ignore.case = TRUE))
+
+overall
+
+# creates lis of names
+
+write.csv(overall,file = "overall.csv")
+
+Student2 <- xxxx(‘xxxxx’)
+
+# print file
+
+write.table(Student2Avg,"SortedAvg")
+
+# generate a CSV file
+
+write.table(Student2Avg,"SortedAvgCSV",sep=",")
+
+#select names that have letter "i"
+
+Student2Filtered <- subset(Student2,grepl("[iI]",Student2$Name))
+
+#-prin and generate a CSV file
+
+write.table(Student2Filtered,"FilteredNamesCSV",sep=",")
