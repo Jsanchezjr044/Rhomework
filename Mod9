@@ -1,0 +1,19 @@
+read.csv("AccordPrice.csv")
+
+library(ggplot2)
+
+accord <- read.csv("AccordPrice.csv")
+
+ggplot(accord, aes(x=Price)) +
+  geom_histogram(binwidth=500) +
+  labs(title="Distribution of Accord Prices", x="Price", y="Miles")
+
+ggplot(accord, aes(x=Age, y=Price)) +
+  geom_boxplot(fill="lightblue") +
+  labs(title="Distribution of Accord Prices by Transmission Type", 
+       x="Transmission", y="Price")
+
+ggplot(accord, aes(x=Mileage, y=Price)) +
+  geom_point(color="darkgreen") +
+  labs(title="Relationship between Accord Price and Mileage", 
+       x="Mileage", y="Price")
