@@ -1,0 +1,15 @@
+Package: Sanchez
+Title: A Data Visualization Package for Statistical Analysis
+
+Version: 0.1.0.9000
+
+Authors@R: "Joseph Sanchez <josephsanch@usf.edu> [aut, cre]"
+
+Description: 
+The Sanchez package provides some data visualization tools for statistical analysis in R. It offers a range of plots, 
+including scatter plots, bar charts, heatmaps, and more, to help researchers and data analysts explore and communicate 
+their data effectively. The Sanchez package simplifies the process of creating informative and visually appealing data visualizations.
+
+Depends: R (>= 3.1.2)
+License: CC0
+LazyData: true
