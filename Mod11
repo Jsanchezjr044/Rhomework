@@ -1,0 +1,32 @@
+
+---
+title: "Final Project Conversion"
+author: "Joseph Sanchez"
+date: "2023-11-13"
+output: Sanchez_projectdoc
+---
+
+# Introduction
+
+This document provides an overview of the function developed for my final project.
+
+## Function 1: Celsius
+
+```R
+
+# Function to convert Celsius to Fahrenheit
+
+celsius_to_fahrenheit <- function(celsius) {
+  fahrenheit <- (celsius * 9/5) + 32
+  return(fahrenheit)
+}
+
+## Function 2: Fahrenheit
+
+# Function to convert Fahrenheit to Celsius
+
+fahrenheit_to_celsius <- function(fahrenheit) {
+  celsius <- (fahrenheit - 32) * 5/9
+  return(celsius)
+}
+
